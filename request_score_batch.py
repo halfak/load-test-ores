@@ -23,7 +23,7 @@ def main():
         args['<host>'], user_agent="Load testing <ahalfaker@wikimedia.org>")
 
     for score in session.score(args['<context>'], args['<model>'], rev_ids):
-        print(score)
+        print(score, flush=True)
 
 
 if __name__ == "__main__":
